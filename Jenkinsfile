@@ -3,19 +3,21 @@ pipeline{
     // 定义环境信息
 
     // 定义流水线加工流程
-    stage('Build') {
-        steps {
-            echo 'Build...'
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build...'
+            }
         }
-    }
-    stage('Test') {
-        steps {
-            echo 'Test...'
+        stage('Test') {
+            steps {
+                echo 'Test...'
+            }
         }
-    }
-    stage('Deploy') {
-        steps {
-            echo 'Deploy...'
+        stage('Deploy') {
+            steps {
+                echo 'Deploy...'
+            }
         }
     }
 }
